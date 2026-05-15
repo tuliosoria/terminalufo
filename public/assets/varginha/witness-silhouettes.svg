@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title">
+  <title id="title">Three witness silhouettes on Rua Benevenuto Bras Vieira</title>
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#161616"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="480" fill="url(#bg2)"/>
+  <g stroke="#1f1f1f" stroke-width="0.8">
+    <path d="M0 380L1200 380"/>
+    <path d="M0 410L1200 410"/>
+  </g>
+  <g fill="#0f0f0f">
+    <rect x="0" y="380" width="1200" height="100"/>
+  </g>
+  <g fill="#141414">
+    <rect x="40" y="200" width="180" height="180"/>
+    <rect x="980" y="180" width="180" height="200"/>
+    <rect x="60" y="220" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="100" y="220" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="140" y="220" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="180" y="220" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="60" y="270" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="100" y="270" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="140" y="270" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="180" y="270" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="1000" y="200" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="1040" y="200" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="1080" y="200" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="1120" y="200" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="1000" y="250" width="20" height="30" fill="#1c1c1c"/>
+    <rect x="1080" y="250" width="20" height="30" fill="#1c1c1c"/>
+  </g>
+  <g fill="#f5a623" opacity="0.6">
+    <rect x="100" y="220" width="20" height="30"/>
+    <rect x="180" y="270" width="20" height="30"/>
+    <rect x="1040" y="200" width="20" height="30"/>
+  </g>
+  <g fill="#0a0a0a" stroke="#2a2a2a" stroke-width="1">
+    <ellipse cx="450" cy="270" rx="36" ry="46"/>
+    <rect x="414" y="316" width="72" height="100"/>
+    <rect x="404" y="320" width="92" height="60" rx="6"/>
+    <rect x="430" y="416" width="14" height="60"/>
+    <rect x="456" y="416" width="14" height="60"/>
+    <ellipse cx="600" cy="260" rx="38" ry="48"/>
+    <rect x="562" y="308" width="76" height="108"/>
+    <rect x="552" y="312" width="96" height="64" rx="6"/>
+    <rect x="580" y="416" width="14" height="62"/>
+    <rect x="606" y="416" width="14" height="62"/>
+    <ellipse cx="750" cy="270" rx="36" ry="46"/>
+    <rect x="714" y="316" width="72" height="100"/>
+    <rect x="704" y="320" width="92" height="60" rx="6"/>
+    <rect x="730" y="416" width="14" height="60"/>
+    <rect x="756" y="416" width="14" height="60"/>
+  </g>
+  <g fill="#ff3b30" opacity="0.7">
+    <circle cx="442" cy="265" r="2.4"/>
+    <circle cx="458" cy="265" r="2.4"/>
+    <circle cx="592" cy="255" r="2.4"/>
+    <circle cx="608" cy="255" r="2.4"/>
+    <circle cx="742" cy="265" r="2.4"/>
+    <circle cx="758" cy="265" r="2.4"/>
+  </g>
+  <text x="40" y="50" font-family="Courier, monospace" font-size="14" fill="#4a4845" letter-spacing="3">WITNESS RECONSTRUCTION / 3 SUBJECTS / 15:30 BRT</text>
+  <text x="40" y="72" font-family="Courier, monospace" font-size="11" fill="#2a2a2a" letter-spacing="2">SILHOUETTE COMPOSITE — IDENTITIES PROTECTED</text>
+</svg>

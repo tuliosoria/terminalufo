@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title">
+  <title id="title">Heavily redacted document page</title>
+  <rect width="1200" height="480" fill="#0a0a0a"/>
+  <rect x="160" y="40" width="880" height="400" fill="#1a1817" stroke="#2a2a2a" stroke-width="1"/>
+  <g font-family="Courier, monospace" fill="#3a3835" letter-spacing="2">
+    <text x="200" y="80" font-size="14">DEPARTMENT OF STATE / MEMO</text>
+    <text x="200" y="100" font-size="11">DATE: 1996-02-04   FROM: ████████   TO: ████████</text>
+    <text x="200" y="120" font-size="11">RE: BRAZIL / VARGINHA / OPEN SOURCE COMPILATION</text>
+  </g>
+  <g fill="#0a0a0a">
+    <rect x="200" y="150" width="800" height="14"/>
+    <rect x="200" y="172" width="640" height="14"/>
+    <rect x="200" y="194" width="780" height="14"/>
+    <rect x="200" y="216" width="500" height="14"/>
+    <rect x="200" y="238" width="700" height="14"/>
+    <rect x="200" y="260" width="820" height="14"/>
+    <rect x="200" y="282" width="460" height="14"/>
+    <rect x="200" y="304" width="780" height="14"/>
+    <rect x="200" y="326" width="600" height="14"/>
+    <rect x="200" y="348" width="780" height="14"/>
+    <rect x="200" y="370" width="540" height="14"/>
+    <rect x="200" y="392" width="700" height="14"/>
+  </g>
+  <g font-family="Courier, monospace" fill="#5a5854" font-size="10" letter-spacing="1">
+    <text x="206" y="161">on or about january 20, 1996, residents of varginha reported</text>
+    <text x="206" y="183">aerial activity in the vicinity of</text>
+    <text x="206" y="205">subsequent reports describe</text>
+    <text x="206" y="227">three persons</text>
+    <text x="206" y="249">no formal investigation</text>
+    <text x="206" y="271">brazilian authorities deny any military operation</text>
+    <text x="206" y="293">media coverage</text>
+    <text x="206" y="315">witness accounts remain consistent</text>
+    <text x="206" y="337">no physical evidence</text>
+    <text x="206" y="359">recommend continued open source monitoring of</text>
+    <text x="206" y="381">further coordination</text>
+    <text x="206" y="403">end of memorandum</text>
+  </g>
+  <g transform="translate(820 60) rotate(10)">
+    <rect x="0" y="0" width="190" height="50" fill="none" stroke="#ff3b30" stroke-width="3"/>
+    <text x="95" y="34" text-anchor="middle" font-family="'Special Elite', Courier, monospace" font-size="22" fill="#ff3b30" letter-spacing="4">REDACTED</text>
+  </g>
+  <text x="200" y="430" font-family="Courier, monospace" font-size="10" fill="#2a2a2a" letter-spacing="2">ILLUSTRATIVE FACSIMILE — NOT AN ACTUAL GOVERNMENT DOCUMENT</text>
+</svg>
