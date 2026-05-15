@@ -13,11 +13,11 @@ test("content modules define required Terminal UFO launch routes", () => {
   assert.match(text("lib/content/site.ts"), /href:\s*"\/press"/);
 });
 
-test("real and fictional file records are explicitly separated", () => {
+test("file records expose fiction entries with notices", () => {
   const files = text("lib/content/files.ts");
-  assert.match(files, /category:\s*"real"/);
   assert.match(files, /category:\s*"fiction"/);
   assert.match(files, /fictionNotice/);
+  assert.doesNotMatch(files, /category:\s*"real"/);
 });
 
 test("Varginha source notes are attributable and non-empty", () => {

@@ -1,37 +1,6 @@
 import type { ClassifiedFile } from "./types";
 
-export const realFiles: ClassifiedFile[] = [
-  {
-    id: "cia-ufo-reading-room",
-    category: "real",
-    title: "CIA UFO Reading Room Collection",
-    classification: "PUBLIC RECORD",
-    type: "PDF",
-    source: "Central Intelligence Agency",
-    href: "https://www.cia.gov/readingroom/collection/ufos-fact-or-fiction",
-    summary: "Declassified CIA documents on UFO investigations from the 1940s-1990s, including Project Blue Book materials and international sighting reports."
-  },
-  {
-    id: "fbi-vault-ufo",
-    category: "real",
-    title: "FBI Records: The Vault - UFO",
-    classification: "PUBLIC RECORD",
-    type: "PDF",
-    source: "Federal Bureau of Investigation",
-    href: "https://vault.fbi.gov/UFO",
-    summary: "FBI investigative files on UFO phenomena, including the famous Roswell memo and civilian witness reports from across the United States."
-  },
-  {
-    id: "project-blue-book",
-    category: "real",
-    title: "Project Blue Book Archive",
-    classification: "DECLASSIFIED",
-    type: "PDF",
-    source: "U.S. Air Force",
-    href: "https://www.archives.gov/research/military/air-force/ufos",
-    summary: "U.S. Air Force systematic study of UFOs from 1952 to 1969, documenting over 12,000 sightings and encounters."
-  }
-];
+export const realFiles: ClassifiedFile[] = [];
 
 const fictionDisclaimer = "Fictional file created for Terminal Varginha. Not a real government record.";
 

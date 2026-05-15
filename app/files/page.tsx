@@ -1,41 +1,32 @@
 import { Section } from "@/components/ui/Section";
-import { ClassifiedCard } from "@/components/ui/ClassifiedCard";
-import { realFiles, fictionFiles } from "@/lib/content/files";
+import { ClassifiedListCard } from "@/components/ui/ClassifiedListCard";
+import { fictionFiles } from "@/lib/content/files";
 import { pageMetadata } from "@/lib/seo/metadata";
 
-const fictionNotice = "Some files in this section are fictional narrative elements created for Terminal Varginha. All fictional files are clearly marked with individual notices explaining their status.";
+const fictionNotice =
+  "Every file in this archive is fictional narrative material created for Terminal Varginha. Each entry carries an individual notice on its detail page. No item below is a real government record.";
 
 export const metadata = pageMetadata({
   title: "The Files — Terminal UFO",
   description:
-    "Browse Terminal UFO file cards separating public UFO document sources from clearly marked Terminal Varginha fiction.",
+    "Case file VRGH-1996. Thirty fictional Terminal Varginha documents. Each card opens a dedicated file detail page.",
   path: "/files"
 });
 
 export default function FilesPage() {
   return (
     <main>
-      <Section eyebrow="Declassified Archives" title="The Files">
-        <p className="mb-12 max-w-3xl text-terminal-muted">
-          {fictionNotice}
-        </p>
-      </Section>
-
-      <Section title="REAL">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {realFiles.map((file) => (
-            <ClassifiedCard key={file.id} file={file} />
-          ))}
-        </div>
+      <Section eyebrow="Case file VRGH-1996" title="The Files">
+        <p className="mb-12 max-w-3xl text-terminal-muted">{fictionNotice}</p>
       </Section>
 
       <Section title="IN-GAME">
         <p className="mb-8 max-w-3xl font-mono text-sm text-[var(--text-secondary)]">
-          Case file VRGH-1996. Thirty fictional documents compiled for Terminal Varginha. Every entry is invented narrative material, not historical evidence.
+          Thirty fictional documents compiled for Terminal Varginha. Click a card to open the full file.
         </p>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {fictionFiles.map((file) => (
-            <ClassifiedCard key={file.id} file={file} />
+            <ClassifiedListCard key={file.id} file={file} href={`/files/${file.id}`} />
           ))}
         </div>
       </Section>

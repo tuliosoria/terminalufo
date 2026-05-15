@@ -9,7 +9,7 @@ test("Terminal UFO launch pages exist with core copy", () => {
     ["app/page.tsx", "Terminal UFO"],
     ["app/game/page.tsx", "Terminal Varginha"],
     ["app/varginha/page.tsx", "The Varginha UFO Incident"],
-    ["app/files/page.tsx", "REAL"],
+    ["app/files/page.tsx", "Case file VRGH-1996"],
     ["app/games/page.tsx", "Terminal Games"],
     ["app/press/page.tsx", "Press Kit"]
   ];
