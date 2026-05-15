@@ -11,6 +11,6 @@ export const siteNav: NavItem[] = [
 ];
 
 export const launchCta: CallToAction = {
-  label: "REQUEST ACCESS",
-  href: "/press#contact"
+  label: "PLAY THE GAME",
+  href: "/game"
 };

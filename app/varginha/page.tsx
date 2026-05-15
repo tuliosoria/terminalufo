@@ -1,8 +1,16 @@
 import Article from "@/content/varginha/main.mdx";
 import { articleSchema } from "@/lib/seo/structured-data";
 import { varginhaSourceNotes } from "@/lib/content/varginha";
+import { pageMetadata } from "@/lib/seo/metadata";
 
 // The Varginha UFO Incident
+
+export const metadata = pageMetadata({
+  title: "The Varginha UFO Incident — Terminal UFO",
+  description:
+    "A sourced long-form account of the 1996 Varginha UFO incident, its witnesses, official denials, public records, and connection to Terminal Varginha.",
+  path: "/varginha"
+});
 
 export default function VarginhaPage() {
   return (

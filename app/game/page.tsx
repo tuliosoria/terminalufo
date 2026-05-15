@@ -2,9 +2,17 @@ import { Section } from "@/components/ui/Section";
 import { Terminal } from "@/components/terminal/Terminal";
 import { CommandAccordion } from "@/components/game/CommandAccordion";
 import { ufo74Lines, mechanics, commands } from "@/lib/content/game";
+import { pageMetadata } from "@/lib/seo/metadata";
 import { videoGameSchema } from "@/lib/seo/structured-data";
 
 const overrideCommand = commands.find((command) => command.command === "override");
+
+export const metadata = pageMetadata({
+  title: "Terminal Varginha — Terminal UFO",
+  description:
+    "Play the hacker terminal game built around classified files, detection risk, UFO74, and the public history of the Varginha UFO case.",
+  path: "/game"
+});
 
 export default function GamePage() {
   return (

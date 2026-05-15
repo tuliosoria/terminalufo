@@ -15,3 +15,17 @@ test("static SEO assets and metadata helpers exist", () => {
   assert.match(text("lib/seo/structured-data.ts"), /VideoGame/);
   assert.match(text("lib/seo/structured-data.ts"), /Article/);
 });
+
+test("launch pages define route-specific metadata paths", () => {
+  for (const [path, route] of [
+    ["app/page.tsx", "/"],
+    ["app/game/page.tsx", "/game"],
+    ["app/varginha/page.tsx", "/varginha"],
+    ["app/files/page.tsx", "/files"],
+    ["app/games/page.tsx", "/games"],
+    ["app/press/page.tsx", "/press"]
+  ]) {
+    assert.match(text(path), /pageMetadata/);
+    assert.match(text(path), new RegExp(`path:\\s*"${route.replace("/", "\\/")}"`));
+  }
+});

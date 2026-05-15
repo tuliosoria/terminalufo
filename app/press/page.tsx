@@ -1,5 +1,13 @@
 import { Section } from "@/components/ui/Section";
 import { pressSummary, pressFacts, contactEmail } from "@/lib/content/press";
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = pageMetadata({
+  title: "Press Kit — Terminal UFO",
+  description:
+    "Press summary, facts, contact details, and downloadable one-pager for Terminal UFO and Terminal Varginha.",
+  path: "/press"
+});
 
 export default function PressPage() {
   return (

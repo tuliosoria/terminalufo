@@ -1,5 +1,13 @@
 import { Section } from "@/components/ui/Section";
 import { Redacted } from "@/components/ui/Redacted";
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = pageMetadata({
+  title: "Terminal Games — Terminal UFO",
+  description:
+    "The Terminal Games universe begins with Terminal Varginha. Future files remain redacted.",
+  path: "/games"
+});
 
 export default function GamesPage() {
   return (

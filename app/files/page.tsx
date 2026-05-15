@@ -1,8 +1,16 @@
 import { Section } from "@/components/ui/Section";
 import { ClassifiedCard } from "@/components/ui/ClassifiedCard";
 import { realFiles, fictionFiles } from "@/lib/content/files";
+import { pageMetadata } from "@/lib/seo/metadata";
 
 const fictionNotice = "Some files in this section are fictional narrative elements created for Terminal Varginha. All fictional files are clearly marked with individual notices explaining their status.";
+
+export const metadata = pageMetadata({
+  title: "The Files — Terminal UFO",
+  description:
+    "Browse Terminal UFO file cards separating public UFO document sources from clearly marked Terminal Varginha fiction.",
+  path: "/files"
+});
 
 export default function FilesPage() {
   return (

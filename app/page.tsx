@@ -4,6 +4,14 @@ import { Terminal } from "@/components/terminal/Terminal";
 import { RiskBar } from "@/components/ui/RiskBar";
 import { heroLogs } from "@/lib/content/game";
 import { launchCta } from "@/lib/content/site";
+import { pageMetadata } from "@/lib/seo/metadata";
+
+export const metadata = pageMetadata({
+  title: "Terminal UFO — Classified. Leaked. Real.",
+  description:
+    "Enter the official archive for Terminal Varginha, the 1996 Varginha UFO incident, and the files that separate public records from fiction.",
+  path: "/"
+});
 
 export default function Home() {
   return (
