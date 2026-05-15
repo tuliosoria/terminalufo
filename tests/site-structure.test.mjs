@@ -32,6 +32,7 @@ test("Terminal UFO uses the planned launch tooling", () => {
   }
 
   assert.equal(pkg.scripts.postbuild, "next-sitemap --config next-sitemap.config.cjs");
+   assert.ok(existsSync("next-sitemap.config.cjs"));
   assert.ok(existsSync("tailwind.config.mjs"));
   assert.ok(existsSync("postcss.config.mjs"));
   assert.match(text("next.config.mjs"), /output:\s*"export"/);
