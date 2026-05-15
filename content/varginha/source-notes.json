@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cia-ufo-reading-room",
+    "title": "CIA UFO Reading Room",
+    "publisher": "Central Intelligence Agency",
+    "url": "https://www.cia.gov/readingroom/collection/ufos-fact-or-fiction",
+    "summary": "Declassified CIA documents on UFO investigations and sightings from multiple decades, providing historical context for government UFO research programs.",
+    "use": "Establishes the historical precedent of government UFO documentation and investigation protocols that inform Terminal Varginha's fictional classified file structure."
+  },
+  {
+    "id": "fbi-vault-ufo",
+    "title": "FBI Records: The Vault - UFO",
+    "publisher": "Federal Bureau of Investigation",
+    "url": "https://vault.fbi.gov/UFO",
+    "summary": "FBI investigative files on UFO phenomena, including witness reports and inter-agency communications about unidentified aerial phenomena.",
+    "use": "Provides authentic examples of government documentation style and classification levels used in Terminal Varginha's interface design."
+  },
+  {
+    "id": "ufo-com-br",
+    "title": "Brazilian UFO Research - UFO.com.br",
+    "publisher": "Brazilian Center for Flying Saucer Research",
+    "url": "https://ufo.com.br",
+    "summary": "Comprehensive Portuguese-language database of UFO sightings in Brazil, including detailed coverage of the Varginha incident with witness testimonies and media reports.",
+    "use": "Primary source for Varginha incident details, witness accounts, and timeline events that form the narrative foundation of the game."
+  },
+  {
+    "id": "nuforc",
+    "title": "National UFO Reporting Center Database",
+    "publisher": "National UFO Reporting Center",
+    "url": "https://nuforc.org",
+    "summary": "Civilian-operated database collecting UFO sighting reports from across the world, providing standardized report formats and witness testimony archives.",
+    "use": "Reference for civilian UFO reporting structures and witness testimony formats used in Terminal Varginha's fictional document design."
+  },
+  {
+    "id": "nicap",
+    "title": "NICAP UFO Evidence Archive",
+    "publisher": "National Investigations Committee on Aerial Phenomena",
+    "url": "http://www.nicap.org",
+    "summary": "Historical archive of UFO investigations conducted by civilian researchers, including case files, witness reports, and analysis of military and government documents.",
+    "use": "Informs the game's approach to presenting UFO evidence and the civilian investigation perspective alongside government files."
+  },
+  {
+    "id": "openminds-varginha",
+    "title": "The Varginha UFO Incident",
+    "publisher": "OpenMinds.tv",
+    "url": "https://www.openminds.tv/varginha-ufo-incident",
+    "summary": "Investigative journalism piece covering the Varginha incident with interviews, analysis of witness credibility, and examination of official Brazilian military response.",
+    "use": "Provides journalistic framework for how Terminal Varginha presents competing narratives and evaluates witness testimony reliability."
+  }
+]
