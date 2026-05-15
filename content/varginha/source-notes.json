@@ -46,5 +46,29 @@
     "url": "https://www.openminds.tv/varginha-ufo-incident",
     "summary": "Investigative journalism piece covering the Varginha incident with interviews, analysis of witness credibility, and examination of official Brazilian military response.",
     "use": "Provides journalistic framework for how Terminal Varginha presents competing narratives and evaluates witness testimony reliability."
+  },
+  {
+    "id": "cia-brazil-document-search",
+    "title": "CIA Reading Room: Brazil UFO Documents",
+    "publisher": "Central Intelligence Agency",
+    "url": "https://www.cia.gov/readingroom/search/site/brazil%20ufo",
+    "summary": "Search interface for declassified CIA documents related to UFO activity and intelligence operations in Brazil during the Cold War era. Includes reports on South American UFO sightings, inter-agency communications, and assessments of foreign government UFO investigation programs.",
+    "use": "Establishes the historical context of U.S. intelligence interest in Brazilian UFO phenomena, informing the game's fictional inter-agency dynamics and classified reporting structures."
+  },
+  {
+    "id": "fbi-vault-part-one",
+    "title": "FBI UFO Files - Part 1 of 16",
+    "publisher": "Federal Bureau of Investigation",
+    "url": "https://vault.fbi.gov/UFO/UFO%20Part%201%20of%2016/view",
+    "summary": "First section of FBI's comprehensive UFO investigation archive containing case files from the 1940s-1970s, including field reports, witness interviews, scientific analysis requests, and inter-agency correspondence with Air Force UFO investigation programs like Project Blue Book.",
+    "use": "Provides authentic examples of field investigation procedures, witness interview formats, and evidence documentation standards that inform Terminal Varginha's fictional case file structure and interrogation transcripts."
+  },
+  {
+    "id": "brazilian-military-response-pattern",
+    "title": "Brazilian Military UFO Protocol History",
+    "publisher": "Brazilian Center for Flying Saucer Research",
+    "url": "https://ufo.com.br/artigos/brazilian-military-ufo-investigations",
+    "summary": "Documentation of Brazilian Armed Forces official UFO investigation policies from 1950s-1990s, including the 1986 'Night of the UFOs' official response and the pattern of initial military engagement followed by categorical denial in high-profile cases.",
+    "use": "Informs the game's depiction of Brazilian military response protocols, inter-service jurisdictional conflicts, and the strategic pattern of deny-then-declassify that characterizes official handling of extraordinary incidents."
   }
 ]
