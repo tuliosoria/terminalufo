@@ -6,52 +6,81 @@ interface ClassifiedListCardProps {
   href: string;
 }
 
-function classificationColor(classification: ClassifiedFile["classification"]): string {
+function stampTone(classification: ClassifiedFile["classification"]): "red" | "amber" | "muted" | "green" {
   switch (classification) {
     case "TOP SECRET":
     case "REDACTED":
-      return "border-[var(--accent-red)] text-[var(--accent-red)]";
+      return "red";
     case "EYES ONLY":
     case "LEAKED":
     case "INTERCEPTED":
-      return "border-[var(--accent-amber)] text-[var(--accent-amber)]";
+      return "amber";
     case "ANONYMOUS SOURCE":
-      return "border-[var(--text-secondary)] text-[var(--text-secondary)]";
+      return "muted";
     default:
-      return "border-[var(--accent-green)] text-[var(--accent-green)]";
+      return "green";
   }
 }
 
 export function ClassifiedListCard({ file, href }: ClassifiedListCardProps) {
   const displayTitle = file.redactedTitle || file.title;
+  const tone = stampTone(file.classification);
 
   return (
     <Link
       href={href}
-      className="group block h-full rounded border border-[var(--text-tertiary)] bg-[var(--bg-secondary)] p-5 transition hover:border-[var(--accent-green)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-green)]"
+      className="group block h-full focus:outline-none"
+      aria-label={`Open file ${file.id}: ${displayTitle}`}
     >
-      <article className="flex h-full flex-col">
-        <div className="mb-3 flex items-center justify-between gap-3">
-          <p className="font-mono text-xs uppercase tracking-wider text-[var(--text-tertiary)]">
-            {file.id}
-          </p>
-          <span
-            className={`rounded border px-2 py-0.5 font-mono text-[10px] font-bold uppercase ${classificationColor(
-              file.classification
-            )}`}
-          >
+      <article className="paper-card flex h-full flex-col gap-5 p-7 sm:p-8 transition group-hover:-translate-y-0.5 group-hover:shadow-2xl">
+        <header className="flex items-start justify-between gap-4">
+          <div>
+            <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--paper-ink-muted)]">
+              File no.
+            </p>
+            <p className="font-mono text-base font-bold uppercase tracking-wider text-[var(--paper-ink)]">
+              {file.id}
+            </p>
+          </div>
+          <span className="paper-stamp text-xs sm:text-sm" data-tone={tone}>
             {file.classification}
           </span>
-        </div>
+        </header>
 
-        <h3 className="mb-3 flex-1 font-[var(--font-heading)] text-base leading-snug text-[var(--text-primary)] group-hover:text-[var(--accent-green)]">
+        <h3 className="font-[var(--font-heading)] text-2xl leading-snug text-[var(--paper-ink)] sm:text-[1.65rem]">
           {displayTitle}
         </h3>
 
-        <div className="flex items-center justify-between font-mono text-xs text-[var(--text-tertiary)]">
-          <span>{file.type}{file.date ? ` · ${file.date}` : ""}</span>
-          <span aria-hidden="true">→</span>
-        </div>
+        <dl className="grid grid-cols-1 gap-2 font-mono text-sm text-[var(--paper-ink-muted)] sm:grid-cols-2">
+          <div>
+            <dt className="inline font-bold uppercase tracking-wider">Type: </dt>
+            <dd className="inline">{file.type}</dd>
+          </div>
+          {file.date && (
+            <div>
+              <dt className="inline font-bold uppercase tracking-wider">Date: </dt>
+              <dd className="inline">{file.date}</dd>
+            </div>
+          )}
+          <div className="sm:col-span-2">
+            <dt className="inline font-bold uppercase tracking-wider">Source: </dt>
+            <dd className="inline">{file.source}</dd>
+          </div>
+        </dl>
+
+        <p className="paper-rule pt-4 text-[1.05rem] leading-relaxed text-[var(--paper-ink)]">
+          {file.summary}
+        </p>
+
+        {file.fictionNotice && (
+          <p className="paper-rule pt-3 font-mono text-xs italic text-[var(--paper-ink-muted)]">
+            {file.fictionNotice}
+          </p>
+        )}
+
+        <p className="mt-auto pt-2 font-mono text-xs uppercase tracking-[0.25em] text-[var(--paper-ink-muted)] transition group-hover:text-[var(--paper-ink)]">
+          Open full file →
+        </p>
       </article>
     </Link>
   );

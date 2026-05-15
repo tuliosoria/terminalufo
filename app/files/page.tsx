@@ -24,7 +24,7 @@ export default function FilesPage() {
         <p className="mb-8 max-w-3xl font-mono text-sm text-[var(--text-secondary)]">
           Thirty fictional documents compiled for Terminal Varginha. Click a card to open the full file.
         </p>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {fictionFiles.map((file) => (
             <ClassifiedListCard key={file.id} file={file} href={`/files/${file.id}`} />
           ))}

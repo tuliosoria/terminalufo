@@ -215,3 +215,88 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== Paper / declassified document aesthetic for /files ===== */
+.paper-card {
+  --paper-base: #ede2c8;
+  --paper-shadow: rgba(0, 0, 0, 0.55);
+  --paper-ink: #1a1410;
+  --paper-ink-muted: #4a3f30;
+  --paper-rule: rgba(26, 20, 16, 0.18);
+
+  position: relative;
+  background-color: var(--paper-base);
+  background-image:
+    radial-gradient(rgba(120, 90, 50, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(60, 40, 20, 0.06) 1px, transparent 1px),
+    linear-gradient(180deg, #efe6cd 0%, #e6d9b8 100%);
+  background-size: 3px 3px, 7px 7px, 100% 100%;
+  background-position: 0 0, 1px 2px, 0 0;
+  color: var(--paper-ink);
+  border: 1px solid rgba(80, 60, 30, 0.35);
+  border-radius: 2px;
+  box-shadow:
+    0 1px 0 rgba(255, 245, 215, 0.4) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 18px 28px -18px var(--paper-shadow),
+    0 6px 12px -6px var(--paper-shadow);
+}
+
+.paper-card::before {
+  /* fibrous paper texture via SVG fractal noise */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.13 0 0 0 0 0.07 0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/></svg>");
+  background-size: 220px 220px;
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+  border-radius: inherit;
+}
+
+.paper-card::after {
+  /* subtle stain + edge vignette */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 80% 10%, rgba(120, 70, 20, 0.18), transparent 55%),
+    radial-gradient(ellipse at 10% 90%, rgba(60, 40, 10, 0.15), transparent 60%),
+    radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(40, 25, 10, 0.18) 100%);
+  border-radius: inherit;
+}
+
+.paper-card > * { position: relative; z-index: 1; }
+
+.paper-card .paper-stamp {
+  font-family: var(--font-stamp), "Special Elite", "Courier Prime", monospace;
+  letter-spacing: 0.18em;
+  border: 2px solid currentColor;
+  padding: 4px 10px;
+  display: inline-block;
+  transform: rotate(-3deg);
+  text-transform: uppercase;
+  background: rgba(255, 248, 220, 0.35);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+}
+
+.paper-card .paper-stamp[data-tone="red"]   { color: #8a1818; border-color: #8a1818; }
+.paper-card .paper-stamp[data-tone="amber"] { color: #8a5a10; border-color: #8a5a10; }
+.paper-card .paper-stamp[data-tone="muted"] { color: #4a3f30; border-color: #4a3f30; }
+.paper-card .paper-stamp[data-tone="green"] { color: #2a5a1c; border-color: #2a5a1c; }
+
+.paper-card .paper-rule {
+  border-top: 1px dashed var(--paper-rule);
+}
+
+.paper-card a:focus-visible,
+a:focus-visible .paper-card {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paper-card .paper-stamp { transform: none; }
+}
