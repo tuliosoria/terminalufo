@@ -4,8 +4,6 @@ import { CommandAccordion } from "@/components/game/CommandAccordion";
 import { ufo74Lines, mechanics, commands } from "@/lib/content/game";
 import { videoGameSchema } from "@/lib/seo/structured-data";
 
-// Commands include: note, save, wait, override
-
 export default function GamePage() {
   return (
     <main>

@@ -1,5 +1,5 @@
-import Article from "../../content/varginha/main.mdx";
-import { articleSchema } from "../../lib/seo/structured-data";
+import Article from "@/content/varginha/main.mdx";
+import { articleSchema } from "@/lib/seo/structured-data";
 import { varginhaSourceNotes } from "@/lib/content/varginha";
 
 // The Varginha UFO Incident
