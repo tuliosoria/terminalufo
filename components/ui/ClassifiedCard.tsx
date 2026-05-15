@@ -1,14 +1,4 @@
-interface ClassifiedFile {
-  id: string;
-  classification: "UNCLASSIFIED" | "CONFIDENTIAL" | "SECRET" | "TOP SECRET";
-  type: string;
-  source: string;
-  title: string;
-  redactedTitle?: string;
-  summary: string;
-  category?: "real" | "fiction";
-  fictionNotice?: string;
-}
+import type { ClassifiedFile } from "@/lib/content/types";
 
 interface ClassifiedCardProps {
   file: ClassifiedFile;
