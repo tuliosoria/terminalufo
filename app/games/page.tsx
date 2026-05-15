@@ -37,6 +37,9 @@ export default function GamesPage() {
               <div className="mb-3 inline-block rounded border border-terminal-muted/20 px-2 py-1 font-mono text-xs font-bold uppercase text-terminal-muted">
                 Redacted
               </div>
+              <div className="mb-3 inline-block rounded border border-terminal-amber/40 px-2 py-1 font-mono text-xs font-bold uppercase tracking-wider text-terminal-amber motion-safe:animate-pulse">
+                COMING SOON
+              </div>
               <h3 className="mb-3 font-heading text-xl">
                 <Redacted>████████████</Redacted>
               </h3>
