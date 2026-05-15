@@ -1,0 +1,45 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Grid background -->
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Scanlines -->
+  <rect width="1200" height="630" fill="url(#scanlines)" opacity="0.05"/>
+  
+  <!-- Top border accent -->
+  <rect x="0" y="0" width="1200" height="3" fill="#00ff00"/>
+  
+  <!-- Main text -->
+  <text x="600" y="280" font-family="monospace" font-size="72" fill="#00ff00" text-anchor="middle" font-weight="bold" filter="url(#glow)">
+    ACCESS GRANTED
+  </text>
+  
+  <!-- Terminal UFO text -->
+  <text x="600" y="380" font-family="monospace" font-size="64" fill="#00ff00" text-anchor="middle" opacity="0.9">
+    TERMINAL UFO
+  </text>
+  
+  <!-- Bottom line -->
+  <text x="600" y="460" font-family="monospace" font-size="24" fill="#00ff00" text-anchor="middle" opacity="0.7">
+    [ CLASSIFIED • LEAKED • REAL ]
+  </text>
+  
+  <!-- Corner brackets -->
+  <text x="40" y="80" font-family="monospace" font-size="36" fill="#00ff00" opacity="0.6">┌─</text>
+  <text x="1140" y="80" font-family="monospace" font-size="36" fill="#00ff00" opacity="0.6" text-anchor="end">─┐</text>
+  <text x="40" y="580" font-family="monospace" font-size="36" fill="#00ff00" opacity="0.6">└─</text>
+  <text x="1140" y="580" font-family="monospace" font-size="36" fill="#00ff00" opacity="0.6" text-anchor="end">─┘</text>
+</svg>
