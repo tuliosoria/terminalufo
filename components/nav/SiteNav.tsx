@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navItems = [
   { href: "/game", label: "Play Game" },
@@ -13,6 +13,17 @@ const navItems = [
 
 export function SiteNav() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [isOpen]);
 
   return (
     <nav className="border-b border-[rgba(255,255,255,0.1)] bg-[var(--bg-secondary)]">

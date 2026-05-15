@@ -42,7 +42,11 @@ export function Terminal({ title, lines, typingSpeed = 24, showCursor = true }: 
           <span className="ml-2 text-sm text-[var(--text-secondary)]">{title}</span>
         </div>
       )}
-      <div className="p-4">
+      <div 
+        className="p-4"
+        role="log"
+        aria-label={title || "Terminal output"}
+      >
         {lines.map((line, index) => (
           <div key={index} className="flex font-mono text-sm leading-relaxed">
             {line.prefix && (

@@ -21,13 +21,13 @@
   --text-primary: #e8e6e1;
   --text-secondary: #8a8680;
   --text-tertiary: #4a4845;
-  --border: 1px solid rgba(255, 255, 255, 0.1);
-  --glow-green: 0 0 8px rgba(0, 255, 65, 0.6);
-  --font-mono: "Share Tech Mono", monospace;
-  --font-body: "Courier Prime", monospace;
-  --font-heading: "JetBrains Mono", monospace;
-  --font-code: "IBM Plex Mono", monospace;
-  --font-special: "Special Elite", monospace;
+  --border: rgba(255, 255, 255, 0.06);
+  --glow-green: 0 0 12px rgba(0, 255, 65, 0.3);
+  --font-display: "Share Tech Mono";
+  --font-heading: "Courier Prime";
+  --font-body: "IBM Plex Mono";
+  --font-ui: "JetBrains Mono";
+  --font-stamp: "Special Elite";
   color-scheme: dark;
 }
 
@@ -35,10 +35,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-primary);
+}
+
 body {
   min-height: 100vh;
   margin: 0;
-  background: var(--bg-primary);
+  background: radial-gradient(
+    ellipse at top,
+    rgba(0, 255, 65, 0.03) 0%,
+    transparent 50%
+  ),
+  var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-body), monospace;
 }
@@ -48,8 +58,17 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background: rgba(0, 255, 65, 0.3);
+  color: var(--text-primary);
+}
+
 .scanlines {
-  pointer-events: none;
+  position: relative;
+}
+
+.scanlines::after {
+  content: "";
   position: fixed;
   inset: 0;
   background: repeating-linear-gradient(
@@ -59,6 +78,7 @@ a {
     transparent 1px,
     transparent 2px
   );
+  pointer-events: none;
   z-index: 9999;
 }
 
@@ -82,8 +102,14 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .terminal-cursor::after {
     animation: none;
+  }
+  .scanlines::after {
+    display: none;
   }
   * {
     animation-duration: 0.01ms !important;
