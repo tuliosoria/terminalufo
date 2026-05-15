@@ -29,7 +29,7 @@ export function Terminal({ title, lines, typingSpeed = 24, showCursor = true }: 
 
   return (
     <div 
-      className="overflow-hidden rounded border border-[rgba(255,255,255,0.1)] bg-[var(--bg-surface)] font-[var(--font-code)] shadow-lg"
+      className="overflow-hidden rounded border border-[rgba(255,255,255,0.1)] bg-[var(--bg-surface)] font-body shadow-lg"
       data-typing-speed={typingSpeed}
     >
       {title && (
