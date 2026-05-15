@@ -46,7 +46,7 @@ test("fictionFiles avoid real Varginha witness or investigator names", () => {
 
 test("fictionFiles meet distribution requirements", () => {
   const us = fictionFiles.filter((f) =>
-    /U\.S\.|United States|Naval|Navy|U\.S\.-Brazil|embassy|federal|allied/i.test(
+    /foreign|Naval|Navy|embassy|federal|allied/i.test(
       `${f.title} ${f.summary} ${f.source}`
     )
   );

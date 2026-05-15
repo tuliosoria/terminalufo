@@ -30,12 +30,12 @@ export const fictionFiles: ClassifiedFile[] = [
   {
     id: "varginha-003",
     category: "fiction",
-    title: "U.S. Navy visited Varginha 47 times between 1996 and 2003",
+    title: "Foreign navy visited Varginha 47 times between 1996 and 2003",
     classification: "DECLASSIFIED",
     type: "REPORT",
-    source: "Foreign Travel Logs, Office of Naval Liaison [FICTIONAL]",
+    source: "Foreign Travel Logs, Office of Foreign Liaison [FICTIONAL]",
     date: "2009-08-12",
-    summary: "Compiled travel records indicate forty-seven distinct entries by Naval personnel into the Minas Gerais region across a seven year window. Visits cluster around a regional airfield with no documented strategic value. Cover stories cite agricultural and meteorological exchange programs that have no corresponding records at host institutions.",
+    summary: "Compiled travel records indicate forty-seven distinct entries by foreign naval personnel into the Minas Gerais region across a seven year window. Visits cluster around a regional airfield with no documented strategic value. Cover stories cite agricultural and meteorological exchange programs that have no corresponding records at host institutions.",
     fictionNotice: fictionDisclaimer
   },
   {
@@ -197,7 +197,7 @@ export const fictionFiles: ClassifiedFile[] = [
   {
     id: "varginha-018",
     category: "fiction",
-    title: "U.S. embassy cable: 'Brazilian counterpart requesting NBC support'",
+    title: "Foreign embassy cable: 'Brazilian counterpart requesting NBC support'",
     classification: "DECLASSIFIED",
     type: "DOCUMENT",
     source: "Released under freedom of information request, 2015 [FICTIONAL]",
@@ -308,7 +308,7 @@ export const fictionFiles: ClassifiedFile[] = [
   {
     id: "varginha-028",
     category: "fiction",
-    title: "Joint U.S.-Brazil exercise 'CRESCENT FIELD' began 36 hours after capture",
+    title: "Joint foreign-Brazil exercise 'CRESCENT FIELD' began 36 hours after capture",
     classification: "DECLASSIFIED",
     type: "DOCUMENT",
     source: "Bilateral exercise schedule [FICTIONAL]",

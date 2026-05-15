@@ -86,14 +86,14 @@ export const fileDetails: Record<string, FileDetail> = {
       {
         heading: "Pattern of travel",
         body: [
-          "The compiled record draws on travel vouchers, per-diem reimbursement filings, and rental car invoices that were released as part of an unrelated audit response. Forty-seven distinct trips were taken by uniformed personnel from the same Naval office to the Minas Gerais region across the seven year window covered by the audit.",
+          "The compiled record draws on travel vouchers, per-diem reimbursement filings, and rental car invoices that were released as part of an unrelated audit response. Forty-seven distinct trips were taken by uniformed personnel from the same foreign naval office to the Minas Gerais region across the seven year window covered by the audit.",
           "All forty-seven trips depart and return through the same regional airfield, which has no routine military traffic. Thirty-one of the trips are scheduled to begin or end on a date within seven days of January 20."
         ]
       },
       {
         heading: "Cover stories",
         body: [
-          "Three cover programs are cited across the forty-seven trips: an agricultural exchange, a meteorological cooperation initiative, and a cultural liaison program. None of the three programs has any corresponding record at the named Brazilian host institution. Two of the three programs have no record of existing in any U.S. agency database.",
+          "Three cover programs are cited across the forty-seven trips: an agricultural exchange, a meteorological cooperation initiative, and a cultural liaison program. None of the three programs has any corresponding record at the named Brazilian host institution. Two of the three programs have no record of existing in any foreign agency database.",
           "The third program — the meteorological one — is real, but its published travel calendar for the same period does not include any of the trips listed in the audit response."
         ]
       },
@@ -585,7 +585,7 @@ export const fileDetails: Record<string, FileDetail> = {
       {
         heading: "What is on the page",
         body: [
-          "The cable is a single page on standard diplomatic letterhead. The header is intact. The subject line is visible. The recipient block is visible. The body of the cable summarizes a request received from a Brazilian liaison officer, in person and outside any standing program, for short-notice access to U.S. specialists in nuclear, biological, and chemical containment.",
+          "The cable is a single page on standard diplomatic letterhead. The header is intact. The subject line is visible. The recipient block is visible. The body of the cable summarizes a request received from a Brazilian liaison officer, in person and outside any standing program, for short-notice access to foreign specialists in nuclear, biological, and chemical containment.",
           "The cable's drafting officer notes that the request \"is unusual in scope, is not associated with any scheduled exercise or exchange, and was conveyed orally with a request that no written record be created on either side.\" The cable itself is the written record that was created in spite of that request."
         ]
       },
@@ -597,7 +597,7 @@ export const fileDetails: Record<string, FileDetail> = {
         ]
       },
       {
-        heading: "What happened on the U.S. side",
+        heading: "What happened on the foreign side",
         body: [
           "Subsequent FOIA filings seeking response cables, internal coordination memoranda, or after-action reports related to this request have produced no responsive records. The agency's standard response to such filings is that no responsive records were located. We have refiled three times under different scopes."
         ]
@@ -916,14 +916,14 @@ export const fileDetails: Record<string, FileDetail> = {
       {
         heading: "The schedule",
         body: [
-          "A single page bilateral exercise schedule for CRESCENT FIELD has surfaced from a U.S. archive. The schedule lists a host base within ground-transport range of Varginha, a participant roster including Brazilian and U.S. units, and a four day duration commencing on 22 January 1996. There is no after-action statement attached and no published announcement preceding the exercise."
+          "A single page bilateral exercise schedule for CRESCENT FIELD has surfaced from a foreign archive. The schedule lists a host base within ground-transport range of Varginha, a participant roster including Brazilian and foreign units, and a four day duration commencing on 22 January 1996. There is no after-action statement attached and no published announcement preceding the exercise."
         ]
       },
       {
         heading: "What the schedule lists",
         body: [
           "The activities listed on the schedule are unusual for a hastily convened bilateral exercise. They include \"environmental sampling,\" \"specimen handling familiarization,\" and \"transport coordination, secure cargo.\" These activities do not appear on the regularly published joint exercise calendars for either country in 1995, 1996, or 1997.",
-          "The schedule is unsigned, but the formatting and routing are consistent with U.S. defense scheduling templates of the period."
+          "The schedule is unsigned, but the formatting and routing are consistent with foreign defense scheduling templates of the period."
         ]
       },
       {
