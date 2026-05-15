@@ -32,3 +32,24 @@ test("Varginha source notes are attributable and non-empty", () => {
     assert.ok(note.use);
   }
 });
+
+test("Varginha editorial is long-form and attributed", () => {
+  const editorial = text("content/varginha/main.mdx");
+  const words = editorial.split(/\s+/).filter(Boolean);
+  assert.ok(words.length >= 2000, `expected at least 2000 words, found ${words.length}`);
+  for (const heading of [
+    "The night of January 20, 1996",
+    "The creatures",
+    "The military response",
+    "The witnesses",
+    "The cover-up",
+    "Declassified documents",
+    "What scientists say",
+    "The connection to Terminal Varginha"
+  ]) {
+    assert.match(editorial, new RegExp(`## ${heading}`));
+  }
+  assert.match(editorial, /Source notes/);
+  assert.match(editorial, /\[cia-ufo-reading-room\]/);
+  assert.match(editorial, /\[ufo-com-br\]/);
+});
