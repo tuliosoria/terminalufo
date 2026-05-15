@@ -1,4 +1,4 @@
-import type { NavItem } from "./types";
+import type { NavItem, CallToAction } from "./types";
 
 export const siteUrl = "https://www.terminalufo.com";
 
@@ -10,7 +10,7 @@ export const siteNav: NavItem[] = [
   { label: "PRESS", href: "/press" }
 ];
 
-export const launchCta = {
+export const launchCta: CallToAction = {
   label: "REQUEST ACCESS",
   href: "/press#contact"
 };

@@ -39,3 +39,20 @@ export type TimelineEntry = {
   body: string;
   sourceIds: string[];
 };
+
+export type Mechanic = {
+  title: string;
+  body: string;
+};
+
+export type CommandReference = {
+  command: string;
+  description: string;
+};
+
+export type PressFact = [string, string];
+
+export type CallToAction = {
+  label: string;
+  href: string;
+};
