@@ -16,10 +16,29 @@ export type ClassifiedFile = {
   category: FileCategory;
   title: string;
   redactedTitle?: string;
-  classification: "PUBLIC RECORD" | "DECLASSIFIED" | "FOR OFFICIAL USE ONLY" | "EYES ONLY" | "TOP SECRET";
-  type: "PDF" | "IMAGE" | "VIDEO" | "AUDIO" | "TEXT";
+  classification:
+    | "PUBLIC RECORD"
+    | "DECLASSIFIED"
+    | "FOR OFFICIAL USE ONLY"
+    | "EYES ONLY"
+    | "TOP SECRET"
+    | "LEAKED"
+    | "ANONYMOUS SOURCE"
+    | "INTERCEPTED"
+    | "REDACTED";
+  type:
+    | "PDF"
+    | "IMAGE"
+    | "VIDEO"
+    | "AUDIO"
+    | "TEXT"
+    | "DOCUMENT"
+    | "PHOTOGRAPH"
+    | "TRANSCRIPT"
+    | "REPORT";
   source: string;
-  href: string;
+  href?: string;
+  date?: string;
   summary: string;
   fictionNotice?: string;
 };

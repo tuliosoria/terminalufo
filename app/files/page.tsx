@@ -30,6 +30,9 @@ export default function FilesPage() {
       </Section>
 
       <Section title="IN-GAME">
+        <p className="mb-8 max-w-3xl font-mono text-sm text-[var(--text-secondary)]">
+          Case file VRGH-1996. Thirty fictional documents compiled for Terminal Varginha. Every entry is invented narrative material, not historical evidence.
+        </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {fictionFiles.map((file) => (
             <ClassifiedCard key={file.id} file={file} />
