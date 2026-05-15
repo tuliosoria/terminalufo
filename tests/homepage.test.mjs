@@ -20,7 +20,9 @@ test("Terminal UFO launch pages exist with core copy", () => {
   }
 
   assert.match(text("app/page.tsx"), /Read the Files/);
+  assert.match(text("app/page.tsx"), /\{launchCta\.label\}/);
   assert.match(text("app/game/page.tsx"), /override/);
   assert.match(text("app/files/page.tsx"), /fictionNotice/);
+  assert.match(text("lib/content/site.ts"), /launchCta[\s\S]*label:\s*"Play the Game"/);
   assert.match(text("lib/content/site.ts"), /launchCta[\s\S]*href:\s*"\/game"/);
 });

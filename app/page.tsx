@@ -29,7 +29,7 @@ export default function Home() {
             href={launchCta.href}
             className="rounded bg-terminal-green px-6 py-3 font-ui text-sm font-bold uppercase tracking-wider text-terminal-bg transition hover:bg-opacity-90"
           >
-            Play the Game
+            {launchCta.label}
           </a>
           <a 
             href="/varginha"
