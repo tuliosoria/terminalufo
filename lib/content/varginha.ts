@@ -33,13 +33,13 @@ export const varginhaTimeline: TimelineEntry[] = [
     date: "1996-01-20",
     title: "Fire Department Response",
     body: "Varginha Fire Department receives calls about a 'strange animal' in the area. Firefighters reportedly arrive at the scene and participate in a capture operation, though official records deny any such deployment.",
-    sourceIds: ["ufo-com-br", "brazilian-military-response-pattern"]
+    sourceIds: ["ufo-com-br", "openminds-varginha"]
   },
   {
     date: "1996-01-20",
     title: "Military Response",
     body: "Local fire department and military personnel reportedly arrive at the scene. Witnesses report seeing military trucks and an organized recovery operation.",
-    sourceIds: ["openminds-varginha", "brazilian-military-response-pattern"]
+    sourceIds: ["openminds-varginha", "ufo-com-br"]
   },
   {
     date: "1996-01-20",
@@ -57,7 +57,7 @@ export const varginhaTimeline: TimelineEntry[] = [
     date: "1996-01-23",
     title: "Witness Interrogations Begin",
     body: "Reports surface of military personnel interviewing witnesses and requesting they sign non-disclosure statements. Several witnesses claim they were pressured to alter or retract their accounts of the creature encounters.",
-    sourceIds: ["openminds-varginha", "brazilian-military-response-pattern"]
+    sourceIds: ["openminds-varginha", "ufo-com-br"]
   },
   {
     date: "1996-02-15",
@@ -69,7 +69,7 @@ export const varginhaTimeline: TimelineEntry[] = [
     date: "1996-04-21",
     title: "Official Denial",
     body: "Brazilian military issues official denial of any UFO or creature recovery operations in Varginha. However, witnesses stand by their accounts and several refuse to retract their statements.",
-    sourceIds: ["ufo-com-br", "openminds-varginha", "brazilian-military-response-pattern"]
+    sourceIds: ["ufo-com-br", "openminds-varginha"]
   },
   {
     date: "1996-05-12",
