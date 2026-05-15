@@ -13,6 +13,7 @@ export function pageMetadata({
   const url = new URL(path, siteUrl).toString();
 
   return {
+    metadataBase: new URL(siteUrl),
     title,
     description,
     alternates: { canonical: url },
