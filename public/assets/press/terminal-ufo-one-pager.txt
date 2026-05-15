@@ -1,0 +1,56 @@
+TERMINAL UFO - ONE PAGER
+=========================
+
+OVERVIEW
+--------
+Terminal UFO is a series of narrative investigation games where players use command-line interfaces to explore classified files about real and fictional UFO incidents. The first game, Terminal Varginha, launches in 2025.
+
+TERMINAL VARGINHA
+-----------------
+Title: Terminal Varginha
+Genre: Hacker terminal / Classified file narrative
+Setting: A fictional archive built around the 1996 Varginha UFO case
+Platform: Web (browser-based)
+Launch: 2025
+
+GAMEPLAY
+--------
+Players navigate a classified terminal interface to investigate the Varginha UFO incident. The game blends real declassified government documents with fictional narrative elements, challenging players to separate fact from fiction while managing the risk of detection.
+
+Core Mechanics:
+- Terminal Interface: Navigate files through authentic command-line interface
+- Risk System: Every file accessed increases exposure
+- File Leak Mechanic: Uncover documents never meant to be public
+- Command Set: note, save, wait, override
+
+REAL vs FICTION
+---------------
+Terminal Varginha clearly separates real historical documents from fictional narrative elements:
+
+REAL sources include:
+- CIA UFO Reading Room Collection
+- FBI Records: The Vault - UFO
+- Project Blue Book Archive
+- Documented witness accounts from Varginha, Brazil (1996)
+
+FICTIONAL elements are clearly marked and include:
+- Classified recovery reports (created for gameplay)
+- Terminal interface narrative
+- Fictionalized expansion of Operation Saucer
+
+All fictional files include explicit notices explaining their status.
+
+THE VARGINHA INCIDENT
+---------------------
+On January 20, 1996, multiple witnesses in Varginha, Brazil reported seeing a strange craft and encountering unusual bipedal creatures. Three young women described a creature with brown oily skin, large red eyes, and three protruding lumps on its head. Reports emerged of military response, hospital transfers, and witness interrogations. Brazilian military issued official denials, but witnesses stood by their accounts. The incident gained national media attention and remains one of Brazil's most compelling UFO cases.
+
+DESIGN PHILOSOPHY
+-----------------
+Terminal UFO explores themes of government secrecy, witness credibility, and the construction of truth from competing narratives. The games do not make claims about what is "real" - instead, they present documented sources and let players draw their own conclusions.
+
+CONTACT
+-------
+Press inquiries: press@terminalufo.com
+Website: https://www.terminalufo.com
+
+© 2025 Terminal UFO. All rights reserved.

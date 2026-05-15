@@ -14,6 +14,7 @@
     "@fontsource/jetbrains-mono": "^5.2.8",
     "@fontsource/share-tech-mono": "^5.2.7",
     "@fontsource/special-elite": "^5.2.8",
+    "@mdx-js/loader": "^3.1.1",
     "@next/mdx": "^16.2.6",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-dialog": "^1.1.15",
