@@ -11,6 +11,24 @@ export type TerminalLine = {
 
 export type FileCategory = "real" | "fiction";
 
+export type FileDetailSection = {
+  heading: string;
+  body: string[];
+};
+
+export type FileArtifact = {
+  label: string;
+  value: string;
+};
+
+export type FileDetail = {
+  excerpt: string;
+  artifacts?: FileArtifact[];
+  sections: FileDetailSection[];
+  handlerNote?: string;
+  related?: string[];
+};
+
 export type ClassifiedFile = {
   id: string;
   category: FileCategory;
@@ -41,6 +59,7 @@ export type ClassifiedFile = {
   date?: string;
   summary: string;
   fictionNotice?: string;
+  detail?: FileDetail;
 };
 
 export type SourceNote = {

@@ -11,7 +11,6 @@ test("Terminal UFO uses the planned launch tooling", () => {
 
   for (const dependency of [
     "@next/mdx",
-    "@radix-ui/react-accordion",
     "@radix-ui/react-dialog",
     "@radix-ui/react-dropdown-menu",
     "@radix-ui/react-navigation-menu",

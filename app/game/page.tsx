@@ -1,11 +1,8 @@
 import { Section } from "@/components/ui/Section";
 import { Terminal } from "@/components/terminal/Terminal";
-import { CommandAccordion } from "@/components/game/CommandAccordion";
-import { ufo74Lines, mechanics, commands } from "@/lib/content/game";
+import { ufo74Lines, mechanics } from "@/lib/content/game";
 import { pageMetadata } from "@/lib/seo/metadata";
 import { videoGameSchema } from "@/lib/seo/structured-data";
-
-const overrideCommand = commands.find((command) => command.command === "override");
 
 export const metadata = pageMetadata({
   title: "Terminal Varginha — Terminal UFO",
@@ -40,17 +37,6 @@ export default function GamePage() {
               </p>
             </article>
           ))}
-        </div>
-      </Section>
-
-      <Section eyebrow="Reference" title="Command Reference">
-        <div className="mx-auto max-w-3xl">
-          <CommandAccordion commands={commands} />
-          {overrideCommand ? (
-            <p className="mt-6 border-l border-terminal-red pl-4 font-ui text-xs uppercase tracking-[0.2em] text-terminal-muted">
-              override is available. It is not safe.
-            </p>
-          ) : null}
         </div>
       </Section>
     </main>
