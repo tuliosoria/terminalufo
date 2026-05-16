@@ -4,6 +4,8 @@ import type { ClassifiedFile } from "@/lib/content/types";
 interface ClassifiedListCardProps {
   file: ClassifiedFile;
   href: string;
+  /** Custom CTA text (defaults to English). Pass a localized string. */
+  openLabel?: string;
 }
 
 function stampTone(classification: ClassifiedFile["classification"]): "red" | "amber" | "muted" | "green" {
@@ -22,7 +24,7 @@ function stampTone(classification: ClassifiedFile["classification"]): "red" | "a
   }
 }
 
-export function ClassifiedListCard({ file, href }: ClassifiedListCardProps) {
+export function ClassifiedListCard({ file, href, openLabel = "Open full file →" }: ClassifiedListCardProps) {
   const displayTitle = file.redactedTitle || file.title;
   const tone = stampTone(file.classification);
 
@@ -79,7 +81,7 @@ export function ClassifiedListCard({ file, href }: ClassifiedListCardProps) {
         )}
 
         <p className="mt-auto pt-2 font-mono text-xs uppercase tracking-[0.25em] text-[var(--paper-ink-muted)] transition group-hover:text-[var(--paper-ink)]">
-          Open full file →
+          {openLabel}
         </p>
       </article>
     </Link>

@@ -1,32 +1,18 @@
-import { Section } from "@/components/ui/Section";
-import { ClassifiedListCard } from "@/components/ui/ClassifiedListCard";
-import { fictionFiles } from "@/lib/content/files";
+import { FilesIndexView } from "@/components/views/FilesView";
+import { getContent } from "@/lib/content/i18n";
+import { defaultLocale } from "@/lib/i18n/config";
 import { pageMetadata } from "@/lib/seo/metadata";
 
-const fictionNotice =
-  "Every file in this archive is fictional narrative material created for Terminal Varginha. Each entry carries an individual notice on its detail page. No item below is a real government record.";
+const locale = defaultLocale;
+const meta = getContent(locale).pageMeta.files;
 
 export const metadata = pageMetadata({
-  title: "The Files — Terminal UFO",
-  description:
-    "Case file VRGH-1996. Thirty fictional Terminal Varginha documents. Each card opens a dedicated file detail page.",
-  path: "/files"
+  title: meta.title,
+  description: meta.description,
+  path: "/files",
+  locale
 });
 
 export default function FilesPage() {
-  return (
-    <main>
-      <Section eyebrow="Case file VRGH-1996" title="The Files">
-        <p className="mb-12 max-w-3xl text-terminal-muted">{fictionNotice}</p>
-      </Section>
-
-      <Section>
-        <div className="grid gap-6 md:grid-cols-2">
-          {fictionFiles.map((file) => (
-            <ClassifiedListCard key={file.id} file={file} href={`/files/${file.id}`} />
-          ))}
-        </div>
-      </Section>
-    </main>
-  );
+  return <FilesIndexView locale={locale} />;
 }

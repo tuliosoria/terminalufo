@@ -10,7 +10,7 @@ test("static SEO assets and metadata helpers exist", () => {
   assert.ok(existsSync("lib/seo/metadata.ts"));
   assert.ok(existsSync("lib/seo/structured-data.ts"));
   assert.ok(existsSync("public/og/default.svg"));
-  assert.match(text("app/layout.tsx"), /Terminal UFO/);
+  assert.match(text("app/layout.tsx"), /Terminal UFO|pageMeta\.home/);
   assert.match(text("app/layout.tsx"), /StaticOverlay/);
   assert.match(text("lib/seo/structured-data.ts"), /VideoGame/);
   assert.match(text("lib/seo/structured-data.ts"), /Article/);
