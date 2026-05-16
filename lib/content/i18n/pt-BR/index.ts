@@ -129,48 +129,17 @@ export const filesIntroNotice =
 // See lib/content/i18n/index.ts for the merge logic.
 // ============================================================================
 
-const fictionDisclaimer =
-  "Arquivo fictício criado para Terminal Varginha. Não é um registro governamental real.";
+export { fictionFiles } from "./files-extra";
 
-export const fictionFiles: ClassifiedFile[] = [
-  {
-    id: "varginha-001",
-    category: "fiction",
-    title: "Gravação de autópsia ET — Varginha, janeiro de 1996",
-    classification: "LEAKED",
-    type: "AUDIO",
-    source: "Upload anônimo, arquivo do subsolo de hospital regional",
-    date: "1996-01-23",
-    summary:
-      "Captura de áudio de quarenta e sete minutos atribuída a um exame procedimental de um sujeito não-humano realizado em uma instalação médica regional não identificada. As vozes identificam dois médicos presentes, um terceiro observador não identificado e alarmes intermitentes de equipamento. As vocalizações do sujeito registradas nos onze minutos finais não foram classificadas.",
-    fictionNotice: fictionDisclaimer
-  },
-  {
-    id: "varginha-002",
-    category: "fiction",
-    title: "Enfermeira descreve 3 dedos e um cheiro que ela nunca esqueceu",
-    classification: "ANONYMOUS SOURCE",
-    type: "TRANSCRIPT",
-    source: "Transcrição de testemunho, identidade selada",
-    date: "1996-02-04",
-    summary:
-      "Depoimento prestado por uma ex-enfermeira de pronto-socorro, 31 anos à época do incidente, que relata breve contato físico com um sujeito sob custódia durante uma transferência. A testemunha descreve consistentemente três dedos alongados, sem polegar opositor, e um odor orgânico que ela compara a ozônio misturado a cobre molhado. A testemunha recusou todo contato posterior.",
-    fictionNotice: fictionDisclaimer
-  },
-  {
-    id: "varginha-003",
-    category: "fiction",
-    title: "Marinha estrangeira visitou Varginha 47 vezes entre 1996 e 2003",
-    classification: "DECLASSIFIED",
-    type: "REPORT",
-    source: "Registros de viagens estrangeiras, Escritório de Ligação Estrangeira [FICTÍCIO]",
-    date: "2009-08-12",
-    summary:
-      "Registros consolidados de viagem indicam quarenta e sete entradas distintas de pessoal naval estrangeiro na região de Minas Gerais ao longo de uma janela de sete anos. As visitas se concentram em torno de um aeródromo regional sem valor estratégico documentado. As justificativas oficiais citam programas de intercâmbio agrícola e meteorológico que não têm registro correspondente nas instituições anfitriãs.",
-    fictionNotice: fictionDisclaimer
-  }
-  // NOTE: entries 004–030 fall back to English until translated.
-];
+import { fileDetails as fileDetails1 } from "./file-details-1";
+import { fileDetails as fileDetails2 } from "./file-details-2";
+import { fileDetails as fileDetails3 } from "./file-details-3";
+
+export const fileDetails = {
+  ...fileDetails1,
+  ...fileDetails2,
+  ...fileDetails3
+};
 
 // ============================================================================
 // Varginha timeline (titles + bodies)
