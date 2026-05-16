@@ -1,7 +1,6 @@
 import { GlitchText } from "@/components/ui/GlitchText";
 import { Section } from "@/components/ui/Section";
 import { Terminal } from "@/components/terminal/Terminal";
-import { RiskBar } from "@/components/ui/RiskBar";
 import { getContent } from "@/lib/content/i18n";
 import { localizedPath, type Locale } from "@/lib/i18n/config";
 import { t } from "@/lib/i18n/messages";
@@ -36,14 +35,6 @@ export function HomeView({ locale }: { locale: Locale }) {
 
         <div className="mx-auto max-w-3xl">
           <Terminal lines={c.heroLogs} title="ufo-74-archive.terminal" />
-        </div>
-      </Section>
-
-      <Section eyebrow={t(locale, "home.statusEyebrow")} title={t(locale, "home.statusTitle")}>
-        <div className="mx-auto max-w-2xl space-y-4">
-          <RiskBar value={15} label={t(locale, "home.exposureLevel")} />
-          <RiskBar value={42} label={t(locale, "home.systemTrace")} />
-          <RiskBar value={78} label={t(locale, "home.alertThreshold")} />
         </div>
       </Section>
     </main>
